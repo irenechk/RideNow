@@ -38,21 +38,8 @@ The objective of this project is to simulate a ride-sharing platform using Data 
 5. Route Optimization Module
 6. Administrative Settings Module
 
-### System Flow
+<img width="358" height="397" alt="image" src="https://github.com/user-attachments/assets/70f10441-98db-4af5-a08e-b3014ff90da3" />
 
-User Ride Request
-↓
-Queue Processing
-↓
-Location Lookup (Hash Map)
-↓
-Driver Search (B-Tree)
-↓
-Nearest Driver Selection
-↓
-Route Optimization (Graph + Dijkstra)
-↓
-Ride Completion
 
 ---
 
