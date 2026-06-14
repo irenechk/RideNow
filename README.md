@@ -262,31 +262,37 @@ Total Toll: Rs. 15
 
 
 Main Menu
+
 <img width="305" height="154" alt="image" src="https://github.com/user-attachments/assets/9ccabf2c-9cca-4359-90bf-b87ad6780412" />
 
 
 
 Driver Directory
+
 <img width="481" height="254" alt="Drivers Directory " src="https://github.com/user-attachments/assets/544b2b92-72d3-434d-8cbf-885ce6e39de4" />
 
 
 
 Adding Ride Request
+
 <img width="387" height="463" alt="add ride request line " src="https://github.com/user-attachments/assets/6fcd093c-aff1-470a-b2f3-18a13890088c" />
 
 
 
 Processing Ride Request
+
 <img width="322" height="317" alt="Process Ride Requests" src="https://github.com/user-attachments/assets/079cd870-5bad-4b58-a07b-5a681fbb5471" />
 
 
 
 Busy Area Ranking
+
 <img width="291" height="255" alt="busy areas " src="https://github.com/user-attachments/assets/6f5c5bc3-6689-472d-b5c7-3900210424a0" />
 
 
 
 Location Lookup
+
 <img width="320" height="362" alt="Location lookup " src="https://github.com/user-attachments/assets/08edec6d-6846-468a-a2e5-e409ea8cc41b" />
 
 
