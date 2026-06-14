@@ -1,20 +1,33 @@
 # RideNow: Smart Ride-Sharing Management System
 
-## 2.1 Project Title
+## 1 Project Title
 
 **RideNow: Smart Ride-Sharing Management System using Data Structures and Algorithms**
 
 ---
 
-## 2.2 Problem Statement
+## 2 Problem Statement
 
 Modern ride-sharing platforms such as Uber and Ola require efficient management of drivers, passengers, ride requests, route selection, and administrative operations. The system must process ride requests fairly, quickly locate drivers, optimize routes, maintain city traffic information, and support rollback of administrative changes.
 
 The objective of this project is to simulate a ride-sharing platform using Data Structures and Algorithms (DSA) to achieve efficient data management and route optimization.
 
+## 2.1 Core Challenges
+| **Challenge**                             | **Impact if Unresolved**                                                             |
+| ----------------------------------------- | ------------------------------------------------------------------------------------ |
+| Inefficient driver information management | Drivers cannot be located quickly, causing delays in ride assignment                 |
+| Unfair ride request processing            | Some users may experience longer wait times while newer requests get processed first |
+| Slow passenger location lookup            | Increased response time for driver allocation and ride matching                      |
+| Poor driver allocation strategy           | Passengers face longer waiting times and drivers may be underutilized                |
+| No route optimization mechanism           | Higher travel time, increased fuel consumption, and reduced customer satisfaction    |
+| No toll-cost consideration in routing     | Passengers may incur unnecessary travel expenses                                     |
+| Lack of administrative rollback support   | Incorrect system settings cannot be reverted easily, affecting operations            |
+| No demand-based area analysis             | Drivers cannot identify high-demand zones, reducing service efficiency               |
+| Manual management of large driver records | System performance decreases as the number of drivers grows                          |
+
 ---
 
-## 2.3 Objectives
+## 3 Objectives
 
 * Manage driver information efficiently.
 * Process ride requests in the order they are received.
@@ -27,23 +40,28 @@ The objective of this project is to simulate a ride-sharing platform using Data 
 
 ---
 
-## 2.4 System Overview / Architecture
+## 4 System Overview / Architecture
 
 ### Components
 
-1. Driver Management Module
-2. Ride Request Management Module
-3. Location Lookup Module
-4. Busy Area Analysis Module
-5. Route Optimization Module
-6. Administrative Settings Module
+| **Module**         | **Class**            | **Responsibility**                                                                                                                       |
+| ------------------ | -------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| **BTree.h**        | `BTree`, `BTreeNode` | Store, search, insert, and manage driver records efficiently using a B-Tree.                                                             |
+| **RideSystem.cpp** | `RideSystem`         | Manage drivers, user locations, ride requests, busy areas, and ride processing operations.                                               |
+| **CityGraph.cpp**  | `CityGraph`          | Represent the city road network, manage routes, and perform fastest-route and toll-saving route calculations using Dijkstra's Algorithm. |
+| **Driver.h**       | `Driver`             | Store driver information including ID, name, location, and availability status.                                                          |
+| **RideRequest.h**  | `RideRequest`        | Store ride request details such as request ID, user ID, pickup node, and destination node.                                               |
+| **Area.h**         | `Area`               | Store area demand information used for busy-area ranking and sorting.                                                                    |
+| **RideSystem.cpp** | `RideSystem`         | Manage Queue-based ride requests, Stack-based admin rollback, Hash Map location lookup, and demand analysis.                             |
+| **main.cpp**       | —                    | Main entry point; displays menu, handles user interaction, initializes sample data, and invokes system operations.                       |
+
 
 <img width="358" height="397" alt="image" src="https://github.com/user-attachments/assets/70f10441-98db-4af5-a08e-b3014ff90da3" />
 
 
 ---
 
-## 2.5 Data Structures and Algorithms Used
+## 5 Data Structures and Algorithms Used
 
 | Component                   | Data Structure / Algorithm |
 | --------------------------- | -------------------------- |
@@ -84,7 +102,7 @@ Finds the shortest and most efficient routes.
 
 ---
 
-## 2.6 Implementation Approach
+## 6 Implementation Approach
 
 ### Driver Management
 
@@ -120,7 +138,7 @@ The nearest available driver is selected by comparing route travel times.
 
 ---
 
-## 2.7 Time and Space Complexity Analysis
+## 7 Time and Space Complexity Analysis
 
 ### B-Tree
 
@@ -168,7 +186,7 @@ Where:
 
 ---
 
-## 2.8 Execution Steps
+## 8 Execution Steps
 
 ### Compilation
 
@@ -240,43 +258,42 @@ Total Toll: Rs. 15
 
 ---
 
-## 2.10 Screenshots
+## 10 Screenshots
 
-Add screenshots of the following:
-
-### Screenshot 1
 
 Main Menu
+<img width="305" height="154" alt="image" src="https://github.com/user-attachments/assets/9ccabf2c-9cca-4359-90bf-b87ad6780412" />
 
-### Screenshot 2
+
 
 Driver Directory
+<img width="481" height="254" alt="Drivers Directory " src="https://github.com/user-attachments/assets/544b2b92-72d3-434d-8cbf-885ce6e39de4" />
 
-### Screenshot 3
+
 
 Adding Ride Request
+<img width="387" height="463" alt="add ride request line " src="https://github.com/user-attachments/assets/6fcd093c-aff1-470a-b2f3-18a13890088c" />
 
-### Screenshot 4
+
 
 Processing Ride Request
+<img width="322" height="317" alt="Process Ride Requests" src="https://github.com/user-attachments/assets/079cd870-5bad-4b58-a07b-5a681fbb5471" />
 
-### Screenshot 5
+
 
 Busy Area Ranking
+<img width="291" height="255" alt="busy areas " src="https://github.com/user-attachments/assets/6f5c5bc3-6689-472d-b5c7-3900210424a0" />
 
-### Screenshot 6
+
 
 Location Lookup
+<img width="320" height="362" alt="Location lookup " src="https://github.com/user-attachments/assets/08edec6d-6846-468a-a2e5-e409ea8cc41b" />
 
-Store screenshots inside:
 
-```text
-screenshots/
-```
 
 ---
 
-## 2.11 Results and Observations
+## 11 Results and Observations
 
 * Driver information was retrieved efficiently using B-Tree.
 * Ride requests were processed fairly using Queue.
@@ -288,7 +305,7 @@ screenshots/
 
 ---
 
-## 2.12 Conclusion
+## 12 Conclusion
 
 The RideNow system successfully demonstrates the practical application of Data Structures and Algorithms in a ride-sharing environment. The project integrates B-Tree, Stack, Queue, Hash Map, Sorting, Graphs, and Dijkstra's Algorithm to efficiently manage drivers, passengers, ride requests, and route optimization. The implementation highlights how appropriate data structures improve performance, scalability, and overall system efficiency.
 
