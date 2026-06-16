@@ -319,6 +319,6 @@ The RideNow system successfully demonstrates the practical application of Data S
 
 ## Developed For
 
-Data Structures and Algorithms (DSA) Mini Project
+Data Structures and Algorithms (DSA) Finals Project
 
 RideNow: Smart Ride-Sharing Management System
